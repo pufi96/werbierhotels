@@ -257,11 +257,20 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 576px) {
+  header {
+    font-size: 0.8rem;
+  }
   header .mt-3 {
     margin: 7px 0px !important;
   }
   #room_pic .card {
     height: 550px !important;
+  }
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .mt-3 {
+    margin: 7px 0px !important;
   }
 }
 
