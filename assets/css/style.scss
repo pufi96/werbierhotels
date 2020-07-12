@@ -13,7 +13,7 @@ ul {
   list-style-type: none;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: $pozadina;
 }
 header{
@@ -26,6 +26,7 @@ header{
 	background-color: $pozadina;
 }
 nav{
+	width: 100%;
 	height: 60px;
 	background-color: $pozadina;
 	padding-top: 2rem;
@@ -112,10 +113,7 @@ nav{
 }
 footer{
 	box-shadow: 0px -2px 3px $pozadina;
-	position: fixed;
-	bottom: 0px;
 	background-color: #FFF;
-	z-index: 3;
 	a{
 		background-color: $pozadina !important;
 		color: $tekst !important;
@@ -216,6 +214,103 @@ footer{
 		}
 	}
 }
+#contact_view{
+	background-image: url(../img/contact.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 700px;
+	.h1{
+		h1{
+			color: $tekst;
+			background-color: rgba(81, 85, 90, 0.77);
+			border-radius: 10px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+#cinfo{
+	font-size: 1.2rem;
+}
+.form-control{
+	border: 1px solid #ba9c53 !important;
+}
+textarea{
+	resize: none;
+}
+#links{
+	a{
+		font-size: 1.3rem;
+	}
+	a:hover{
+		color: $tekst;
+	}
+}
+.material-icons{
+	color: #fff;
+}
+#mheader{
+	margin-top: 20px;
+	p{
+		text-align: center;
+		margin: 5px 0px;
+	}
+}
+#mnav{
+	height: 65px !important;
+	box-sizing: border-box;
+	padding: 0px;
+	position: sticky;
+	top: 0px;
+}
+#author_view{
+	width: 100%;
+	background-image: url(../img/author_view.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1{
+		padding: 5px 15px;
+		color: $tekst;
+		background-color: rgba(81, 85, 90, 0.77);
+		border-radius: 10px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
+#author{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	#pauthor{
+		display: flex;
+		justify-content: center;
+		
+	}
+	#tauthor{
+		p{
+			margin-top: 20px;
+			font-size: 1.3rem;
+		}
+	}
+}
+#footer{
+	display: flex;
+	.row{
+		margin-top: 20px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 767px){
+	.pl-5{
+		padding: 0px !important;
+	}
+}
 @media only screen and (max-width: 991px){
 	.okrenuto{
 		display: flex;
@@ -238,6 +333,11 @@ footer{
 		font-size: 0.8rem;
 		.mt-3{
 			margin: 7px 0px !important;
+		}
+	}
+	#links{
+		a{
+			font-size: 1rem;
 		}
 	}
 }

@@ -13,7 +13,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: #51555a;
 }
 
@@ -30,6 +30,7 @@ header {
 }
 
 nav {
+  width: 100%;
   height: 60px;
   background-color: #51555a;
   padding-top: 2rem;
@@ -131,10 +132,7 @@ nav a:hover {
 footer {
   -webkit-box-shadow: 0px -2px 3px #51555a;
           box-shadow: 0px -2px 3px #51555a;
-  position: fixed;
-  bottom: 0px;
   background-color: #FFF;
-  z-index: 3;
 }
 
 footer a {
@@ -244,6 +242,133 @@ footer a:hover {
   text-transform: uppercase;
 }
 
+#contact_view {
+  background-image: url(../img/contact.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
+}
+
+#contact_view .h1 h1 {
+  color: #ba9c53;
+  background-color: rgba(81, 85, 90, 0.77);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#cinfo {
+  font-size: 1.2rem;
+}
+
+.form-control {
+  border: 1px solid #ba9c53 !important;
+}
+
+textarea {
+  resize: none;
+}
+
+#links a {
+  font-size: 1.3rem;
+}
+
+#links a:hover {
+  color: #ba9c53;
+}
+
+.material-icons {
+  color: #fff;
+}
+
+#mheader {
+  margin-top: 20px;
+}
+
+#mheader p {
+  text-align: center;
+  margin: 5px 0px;
+}
+
+#mnav {
+  height: 65px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+}
+
+#author_view {
+  width: 100%;
+  background-image: url(../img/author_view.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#author_view h1 {
+  padding: 5px 15px;
+  color: #ba9c53;
+  background-color: rgba(81, 85, 90, 0.77);
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#author {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+#author #pauthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#author #tauthor p {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#footer .row {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .pl-5 {
+    padding: 0px !important;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .okrenuto {
     display: -webkit-box;
@@ -271,6 +396,9 @@ footer a:hover {
   }
   footer .mt-3 {
     margin: 7px 0px !important;
+  }
+  #links a {
+    font-size: 1rem;
   }
 }
 
